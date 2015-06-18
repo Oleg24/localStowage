@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LocalStorage Demo</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Bitter|Ubuntu+Mono' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+  <div class="wrapper">
+    <p>This simple example will show you how webstorage works client side with html5. Any changes you make to the form will be saved client side and restored when your next visit.  Open the <a href="events.html" target="blank"> events</a> page simultaneously to see what changes were made to your localStorage.</p>
+    <form>
+      <h1>Web Storage Example</h1>
+      <div>
+        <label for="recipient">Recipient</label>
+        <input type="text" class="recipient" id="recipient" placeholder="enter recipient name">
+      </div>
+      <div>
+        <label for="message">Write your message here</label>
+        <textarea class="message" id="message" placeholder="what message do you want to send"></textarea>
+      </div>
+      <div>
+        <label for="color">What background color</label>
+        <select id="color">
+          <option value="Blue" id="blue" selected>Blue</option>
+          <option value="Yellow">Yellow</option>
+          <option value="Red">Red</option>
+          <option value="Green">Green</option>
+        </select>
+      </div>
+      <div>
+        <button type="button" id="clear">Reset</button>
+      </div>
+    </form>
+  </div>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
